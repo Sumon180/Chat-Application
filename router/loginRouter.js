@@ -1,10 +1,10 @@
 const express = require("express");
 const { getLogin, login } = require("../controller/loginController");
-const decorateHtmlResponse = require("../middleware/common/decorateHtmlResponse");
+const decorateHtmlResponse = require("../middlewares/common/decorateHtmlResponse");
 const {
   doLoginValidators,
   doLoginValidationHandler,
-} = require("../middleware/login/loginValidators");
+} = require("../middlewares/login/loginValidators");
 
 const router = express.Router();
 

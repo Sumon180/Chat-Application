@@ -4,12 +4,12 @@ const {
   addUser,
   removeUser,
 } = require("../controller/usersController");
-const decorateHtmlResponse = require("../middleware/common/decorateHtmlResponse");
-const avatarUpload = require("../middleware/users/avatarUpload");
+const decorateHtmlResponse = require("../middlewares/common/decorateHtmlResponse");
+const avatarUpload = require("../middlewares/users/avatarUpload");
 const {
   addUserValidators,
   addUserValidationHandler,
-} = require("../middleware/users/usersValidators");
+} = require("../middlewares/users/usersValidators");
 const router = express.Router();
 
 router.get("/", decorateHtmlResponse("Users"), getUsers);
