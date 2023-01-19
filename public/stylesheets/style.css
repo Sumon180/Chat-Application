@@ -225,7 +225,7 @@ input[type="submit"]:active {
 /* menu related styles */
 .menu {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   justify-content: end;
   align-content: center;
   height: 40px;
